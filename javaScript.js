@@ -11,8 +11,9 @@ const ex4 =()=>{
 let min = prompt("Ingrese el minimo: ");
 let max = prompt("Ingrese el maximo: ");
 const numeroAleatorio = (min,max) => {
-    let aleatorio = Math.floor(Math.random()*max +min);
-    return aleatorio;
+    min = Number(min);
+    max = Number(max);
+    return Math.floor(Math.random()*(max-min+1))+min;
 }
 console.log(numeroAleatorio(min,max));
 }
@@ -52,15 +53,15 @@ const ex7 =()=> {
 }
 // ejercicio 8
 const ex8 =()=> {
-    function constraseña () {
-        let constraseña;
-        for (let i=0;i<=6;i++) {
-            let num = Math.floor(Math.random()*10);
-            constraseña +=num;
-        }
-        return contraseña;
+    function contraseña() {
+    let pass = "";
+    for (let i = 0; i < 6; i++) { 
+      let num = Math.floor(Math.random() * 10);
+      pass += num;
     }
-    console.log(contraseña());        
+    return pass;
+  }
+  console.log("Contraseña generada: " + contraseña());      
 }
 // ejercicio 9
 const ex9 =()=> {
