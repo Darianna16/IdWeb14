@@ -1,9 +1,9 @@
 // ejercicio 3
 const ex3 = () =>{
-let precio = parseInt(prompt("Ingrese el precio del producto: "));
-console.log("Redondeo hacia abajo: "+Math.floor(precio));
-console.log("Redondeo hacia arriba: "+Math.ceil(precio));
-console.log("Redondeo normal:" +Math.round(precio));
+let precio = parseFloat(prompt("Ingrese el precio del producto: "));
+alert("Redondeo hacia abajo: "+Math.floor(precio));
+alert("Redondeo hacia arriba: "+Math.ceil(precio));
+alert("Redondeo normal:" +Math.round(precio));
 }
 
 //ejercicio 4
@@ -15,7 +15,7 @@ const numeroAleatorio = (min,max) => {
     max = Number(max);
     return Math.floor(Math.random()*(max-min+1))+min;
 }
-console.log(numeroAleatorio(min,max));
+alert(numeroAleatorio(min,max));
 }
 
 //ejercicio 5
@@ -26,7 +26,7 @@ const Dado = () => {
 }
 let dado1 = Dado();
 let dado2 = Dado();
-console.log("Suma: "+(dado1+dado2));
+alert("Suma: "+(dado1+dado2));
 }
 // ejercicio 6
 const ex6 =()=> {
@@ -48,8 +48,8 @@ const ex7 =()=> {
         return grados;
     }
     let angulo = parseInt(prompt("Ingrese el angulo: "));
-    console.log("Seno: "+Math.sin(gradosRadianes(angulo)));
-    console.log("Coseno: "+Math.cos(gradosRadianes(angulo)));
+    alert("Seno: "+Math.sin(gradosRadianes(angulo)));
+    alert("Coseno: "+Math.cos(gradosRadianes(angulo)));
 }
 // ejercicio 8
 const ex8 =()=> {
@@ -61,7 +61,7 @@ const ex8 =()=> {
     }
     return pass;
   }
-  console.log("Contraseña generada: " + contraseña());      
+  alert("Contraseña generada: " + contraseña());      
 }
 // ejercicio 9
 const ex9 =()=> {
@@ -73,8 +73,8 @@ const ex9 =()=> {
     let y1 = parseFloat(prompt("Ingrese y1:"));
     let x2 = parseFloat(prompt("Ingrese x2:"));
     let y2 = parseFloat(prompt("Ingrese y2:"));
-    console.log("Distancia entre puntos:"+distancia(x1,y1,x2,y2));
-    console.log("Suma de distancias al origen "+(distancia(x1,y1,0,0)+distancia(x2,y2,0,0)));
+    alert("Distancia entre puntos:"+distancia(x1,y1,x2,y2));
+    alert("Suma de distancias al origen "+(distancia(x1,y1,0,0)+distancia(x2,y2,0,0)));
 }
 // ejercicio 10
 const ex10 =()=> {
@@ -90,8 +90,8 @@ const ex10 =()=> {
 let notas = [15, 18, 12, 20, 10];
 let notasNormalizadas = normalizarCalificaciones(notas);
 
-console.log("Calificaciones originales:", notas);
-console.log("Calificaciones normalizadas:", notasNormalizadas);
+alert("Calificaciones originales:", notas);
+alert("Calificaciones normalizadas:", notasNormalizadas);
 }
 // ejercicio 11
 const ex11 =()=> {
